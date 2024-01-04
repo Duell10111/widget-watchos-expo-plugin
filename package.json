@@ -6,8 +6,7 @@
     "lint": "eslint .",
     "plugin:build": "tsc -p ./plugin/tsconfig.json",
     "plugin:watch": "expo-module build plugin",
-    "plugin:test": "expo-module test plugin",
-    "postinstall": "yarn plugin:build"
+    "plugin:test": "expo-module test plugin"
   },
   "files": [
     "app.plugin.js",
