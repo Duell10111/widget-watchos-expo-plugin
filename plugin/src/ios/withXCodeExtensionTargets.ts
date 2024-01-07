@@ -203,7 +203,7 @@ async function addXcodeTarget(
             "PBXCopyFilesBuildPhase",
             "Embed Watch Content",
             xcodeProject.getFirstTarget().uuid,
-            targetType,
+            "watch2_app",
             '"$(CONTENTS_FOLDER_PATH)/Watch"'
         );
     }
