@@ -12,6 +12,7 @@ type IosExtensionTarget = {
     sourceFiles: string[];
     entitlementsFile?: string;
     frameworks: string[];
+    buildConfigOverrides?: Record<string, string>
 };
 
 type WithExtensionProps = {

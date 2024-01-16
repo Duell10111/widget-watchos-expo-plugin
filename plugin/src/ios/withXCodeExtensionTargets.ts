@@ -294,6 +294,7 @@ async function addXcodeTarget(
                     INFOPLIST_FILE: `${target.name}/Info.plist`,
                     INFOPLIST_KEY_CFBundleDisplayName: '"${PRODUCT_NAME}"',
                     ...extras,
+                    ...target.buildConfigOverrides,
                 };
             }
         }
