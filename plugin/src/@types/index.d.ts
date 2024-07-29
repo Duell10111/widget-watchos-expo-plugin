@@ -16,6 +16,7 @@ type IosExtensionTarget = {
 };
 
 type WithExtensionProps = {
+    isTV?: boolean;
     devTeamId: string;
     targets: IosExtensionTarget[];
 };
