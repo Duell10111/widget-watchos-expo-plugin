@@ -203,7 +203,7 @@ async function addXcodeTarget(
             "PBXCopyFilesBuildPhase",
             "Embed Watch Content",
             xcodeProject.getFirstTarget().uuid,
-            targetType,
+            "watch2_app",
             '"$(CONTENTS_FOLDER_PATH)/Watch"'
         );
     }
@@ -294,6 +294,7 @@ async function addXcodeTarget(
                     INFOPLIST_FILE: `${target.name}/Info.plist`,
                     INFOPLIST_KEY_CFBundleDisplayName: '"${PRODUCT_NAME}"',
                     ...extras,
+                    ...target.buildConfigOverrides,
                 };
             }
         }
